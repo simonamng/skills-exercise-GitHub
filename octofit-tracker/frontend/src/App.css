@@ -1,0 +1,68 @@
+.App {
+  text-align: left;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f8fafc 0%, #eaf2f8 50%, #dff0ee 100%);
+  color: #1f2937;
+}
+
+.app-logo-small {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #ffffffcc, #f0f9ffcc);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+}
+
+h5, h2 {
+  color: #0f172a;
+}
+
+.table {
+  background: white;
+}
+
+.table thead th {
+  background: linear-gradient(90deg, #f1f5f9, #e6f0ff);
+  color: #0f172a;
+}
+
+.btn-primary {
+  background: #0d9488;
+  border-color: #0d9488;
+}
+
+.btn-outline-secondary {
+  color: #0f172a;
+  border-color: rgba(15,23,42,0.08);
+}
+
+.App .container {
+  max-width: 1100px;
+}
+
+.nav-link {
+  color: #0f172a !important;
+}
+
+.card-header small {
+  font-size: 0.8rem;
+  color: #475569;
+}
+
+.modal-content pre {
+  background: #0f172a05;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+/* helper spacing */
+.me-2 { margin-right: .5rem; }
+
