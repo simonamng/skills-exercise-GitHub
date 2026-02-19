@@ -5,10 +5,7 @@ export default function Activities() {
   const [items, setItems] = useState([]);
   const [modalContent, setModalContent] = useState(null);
 
-  const codespaceName = process.env.REACT_APP_CODESPACE_NAME;
-  const baseHost = codespaceName ? `${codespaceName}-8000.app.github.dev` : 'localhost:8000';
-  const baseUrl = codespaceName ? `https://${baseHost}/api` : `http://${baseHost}/api`;
-  const endpoint = `${baseUrl}/activities/`;
+  const endpoint = `https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev/api/activities/`;
 
   const fetchData = () => {
     console.log('Fetching Activities from', endpoint);

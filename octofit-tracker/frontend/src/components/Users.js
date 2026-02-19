@@ -5,10 +5,7 @@ export default function Users() {
   const [items, setItems] = useState([]);
   const [modalContent, setModalContent] = useState(null);
 
-  const codespaceName = process.env.REACT_APP_CODESPACE_NAME;
-  const baseHost = codespaceName ? `${codespaceName}-8000.app.github.dev` : 'localhost:8000';
-  const baseUrl = codespaceName ? `https://${baseHost}/api` : `http://${baseHost}/api`;
-  const endpoint = `${baseUrl}/users/`;
+  const endpoint = `https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev/api/users/`;
 
   const fetchData = () => {
     console.log('Fetching Users from', endpoint);
